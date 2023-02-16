@@ -1,4 +1,4 @@
-package cho2.lecture.p01variable;
+package ch02.lecture.p01variable;
 
 public class C01Variable {
 	
