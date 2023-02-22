@@ -4,17 +4,16 @@ import java.util.Scanner;
 
 public class T01test01 {
 	public static void main(String[] args) {
-		String a = "Hiabcx";
-		String b = "bc";
-		String str1 = a.toLowerCase();
-		String str2 = b.toLowerCase();
-		boolean res;
+		String[] strlists = {"We", "are", "the", "world!"};
+		int[] answer = new int[strlists.length];
+		
+		int len;
+		String str;
+		str = strlists[0];
+		len = str.length();
+		System.out.println(len);
+		answer[0] = 5;
+//		System.out.println(answer[0]);
 
-		if (str1.contains(str2) || str2.contains(str1)) {
-			res = true;
-		} else {
-			res = false;
-		}
-		System.out.println(res);
 	}
 }
