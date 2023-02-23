@@ -1,25 +1,26 @@
-package test;
+package ch05.exercise;
 
 import java.util.Scanner;
 
-public class T01test01 {
+public class Example09 {
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		boolean run = true;
 		int student = 0;
 		int[] scores = null;
+		boolean run = true;
+		Scanner scanner = new Scanner(System.in);
 		
-		while(run) {
-			System.out.println("------------------------------------------------------");
-			System.out.println("1.학생수 | 2.점수입력 | 3.점수리스트 | 4.분석 | 5.종료");
-			System.out.println("------------------------------------------------------");
+	    while (run) {
+			System.out.println("------------------------------------------------------------");
+			System.out.println("1. 학생 수 | 2. 점수입력 | 3. 점수리스트 | 4. 분석 | 5.종료");
+			System.out.println("------------------------------------------------------------");
 			System.out.print("선택> ");
 			
 			int choice = scanner.nextInt();
 			
+			
 			switch (choice) {
 			case 1 -> {
-				System.out.print("학생 수> ");
+				System.out.print("학생수> ");
 				student = scanner.nextInt();
 				
 				scores = new int[student];
@@ -43,18 +44,21 @@ public class T01test01 {
 					}
 				}
 				System.out.println("최고 점수 : " + max);
+				
 				int sum = 0;
-				for (int i=0; i<scores.length; i++) {
-					sum += scores[i];
+				for (int k=0; k<scores.length; k++) {
+					sum += scores[k];
 				}
-				System.out.println("평균 점수 : " + (double) sum / student);
+				double avg = (double) sum / student;
+				System.out.println("평균 점수 : " + avg);
 			}
 			case 5 -> {
 				run = false;
 			}
 			};
 		}
-		
-		System.out.println("프로그램 종료");
+	    System.out.println("프로그램 종료");
 	}
 }
+		
+

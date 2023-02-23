@@ -9,7 +9,7 @@ public class C04Reference {
 		System.out.println(arr[0]); //30
 	}
 	
-	public static void method1(int[] arr2) {   //arr2 = arr ?
+	public static void method1(int[] arr2) {   //arr2 = arr
 		System.out.println(arr2[0]);  //3
 		arr2[0] = 30;
 		System.out.println(arr2[0]);  //30
