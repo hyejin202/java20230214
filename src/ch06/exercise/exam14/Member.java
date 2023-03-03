@@ -1,19 +1,13 @@
-package ch06.exercise.exam13;
+package ch06.exercise.exam14;
 
 public class Member {
 	private String name, id, password;
 	private int age;
-	private boolean married;
 	
-
-	public boolean isMarried() {
-		return married;
+	Member(String name, String id) {
+		this.name = name;
+		this.id = id;
 	}
-
-	public void setMarried(boolean married) {
-		this.married = married;
-	}
-
 
 	public String getName() {
 		return name;
@@ -46,6 +40,5 @@ public class Member {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	
 	
 }
