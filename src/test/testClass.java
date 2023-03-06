@@ -2,7 +2,7 @@ package test;
 
 public class testClass {
 	String accNum, accName;
-	int balance;
+	int accMoney;
 	
 	public String getAccNum() {
 		return accNum;
@@ -16,10 +16,10 @@ public class testClass {
 	public void setAccName(String accName) {
 		this.accName = accName;
 	}
-	public int getBalance() {
-		return balance;
+	public int getAccMoney() {
+		return accMoney;
 	}
-	public void setBalance(int balance) {
-		this.balance = balance;
+	public void setAccMoney(int accMoney) {
+		this.accMoney = accMoney;
 	}
 }
