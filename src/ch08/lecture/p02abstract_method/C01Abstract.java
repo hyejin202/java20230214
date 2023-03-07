@@ -20,6 +20,8 @@ public class C01Abstract {
 //		o2.method2();   //XX
 		
 		System.out.println();
+		o3.method1();
+//		o3.method2();
 		
 		
 		
