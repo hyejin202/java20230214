@@ -1,4 +1,4 @@
-package ch07.sec011;
+package ch07.sec11;
 
 public sealed class Person permits Employee, Manager {
 	//필드

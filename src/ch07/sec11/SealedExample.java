@@ -1,4 +1,4 @@
-package ch07.sec011;
+package ch07.sec11;
 
 public class SealedExample {
 	public static void main(String[] args) {

@@ -17,7 +17,7 @@ public class InstanceofExample {
 		 } */
 		
 		//person이 참조하는 객체가 student타입일 경우
-		//student 변수에 대입 (타입 변환 발색)
+		//student 변수에 대입 (타입 변환 발생)
 		if (person instanceof Student student) {
 			System.out.println("studentNo: " + student.studentNo);
 			student.study();
