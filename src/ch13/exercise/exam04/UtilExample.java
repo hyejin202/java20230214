@@ -18,6 +18,17 @@ public class UtilExample {
 	}
 }
 
+class Util {
+		public static <P extends Pair<K, V>, K, V> V  getValue(P pair, K key) {
+			K k = pair.getKey();
+			
+			if (k.equals(key)) {
+				return pair.getValue();
+			} 
+			return null;
+		}
+}
+
 class Pair<K, V> {
 	private K key;
 	private V value;
