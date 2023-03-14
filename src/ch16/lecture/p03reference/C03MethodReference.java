@@ -2,11 +2,13 @@ package ch16.lecture.p03reference;
 
 public class C03MethodReference {
 	public static void main(String[] args) {
+		//인스턴스 메소드 참조
+		//Reference to an instance method of a particular object
 		MyInterface04 o1 = a -> System.out.println(a);
 		
 		MyClass03 s1 = new MyClass03();
 		//둘이 같은 의미
-		MyInterface04 o2 = a -> s1.method(a);
+		MyInterface04 o2 = a -> s1.method(a);  
 		MyInterface04 o3 = s1::method;
 		
 		MyInterface02 o4 = () -> s1.method1();
