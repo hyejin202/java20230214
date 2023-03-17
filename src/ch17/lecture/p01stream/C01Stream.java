@@ -15,7 +15,7 @@ public class C01Stream {
 		//    리턴 타입 : Stream 아님
 		// 개수 세기(count) : 
 		stream1.count();
-		stream1.findFirst();  //최종연산 후 재사용불가, 다시 스트림 만들어서 사용해야 함
+		stream1.findFirst();  //최종연산(terminal operation 사용) 후 재사용불가, 다시 스트림 만들어서 사용해야 함, 중간연산자는 재사용 가능
 		
 		// 2. 중간 연산 (intermediate operation)
 		//     리턴 타입 : Stream
