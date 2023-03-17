@@ -10,6 +10,7 @@ public class C03Stream {
 		
 		Stream<Integer> stream1 = list.stream();
 		long count = stream1.count();
+//		System.out.println(stream1.max(Integer::compare));
 		System.out.println(count);
 		
 		Stream<Integer> stream2 = list.stream();

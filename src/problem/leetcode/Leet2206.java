@@ -17,20 +17,22 @@ public class Leet2206 {
 			}
 			
 		}
-		for(Map.Entry<Integer, Integer> entry : map.entrySet()) {
-			int v = entry.getValue();  //getValue() : entry 메소드
-			if(v % 2 ==1) {
-				return false;
-			}
-		}
-
-		return true;
+		//value가 홀수인게 한개라도 있으면 false 리턴
+//		for(Map.Entry<Integer, Integer> entry : map.entrySet()) {
+//			int v = entry.getValue();  //getValue() : entry 메소드
+//			if(v % 2 ==1) {
+//				return false;
+//			}
+//		}
+//
+//		return true;
 		
-		
-		
-		
-		
-		
-		
+		return map.values()
+				.stream()
+//				.allMatch(e -> (e%2==0));
+				.allMatch(this::even);
+	}
+	private boolean even(int e) {
+		return (e%2) == 0;
 	}
 }

@@ -10,10 +10,6 @@ public class C03ForEach {
 			.forEach(s -> System.out.println(s));   //최종연산 대부분 FunctionalInterface->람다랑 잘 맞음
 		list.stream()
 			.forEach(s -> System.out.println("원소 : " + s));
-		
-		
-		
-		
-		
+
 	}
 }
