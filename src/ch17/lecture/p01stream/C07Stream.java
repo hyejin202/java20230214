@@ -10,6 +10,7 @@ public class C07Stream {
 		IntStream stream1 = IntStream.range(0,  10);  // 0 ~ 9
 		System.out.println(stream1.count()); //10
 		
+		//rangeClosed(시작값, 종료값) - 종료값 포함 O
 		IntStream stream2 = IntStream.rangeClosed(0, 10);  // 0~10
 		System.out.println(stream2.count());  //11
 	}
