@@ -1,4 +1,4 @@
-package ch18.lecture.p05buffered;
+package ch18.lecture.p06buffered;
 
 import java.io.*;
 
