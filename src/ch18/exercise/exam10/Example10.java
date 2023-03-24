@@ -52,7 +52,7 @@ public class Example10 {
 //			bis.transferTo(bos);
 			byte[] data = new byte[1024];
 			int len = 0;
-			while((len = bsi.read(data)) != -1) {
+			while((len = bis.read(data)) != -1) {
 				bos.write(data, 0, len);
 			}
 			bos.flush();
