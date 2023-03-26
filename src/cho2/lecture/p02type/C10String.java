@@ -1,6 +1,6 @@
 package cho2.lecture.p02type;
 
-public class C11String {
+public class C10String {
 	public static void main(String[] args) {
 		// String (참조타입)
 		//문자열 저장
